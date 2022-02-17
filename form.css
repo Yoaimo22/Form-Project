@@ -1,0 +1,583 @@
+               @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+                :root {
+                   --color-white: #f3f3f3;
+                   --color-darkblue: #796ec8;
+                   --color-darkblue-alpha: rgba(13, 138, 187, 0.8);
+                   --color-green: #d63333;
+               }
+               
+               *,
+               *::before,
+               *::after {
+                   box-sizing: border-box;
+               }
+               
+               body {
+                   font-family: 'Poppins', sans-serif;
+                   font-size: 1rem;
+                   font-weight: 400;
+                   line-height: 1.4;
+                   margin: 0;
+                   background-color: rgb(0, 0, 0);
+               }
+               
+               #title {
+                   color: #f3f3f3;
+                   font-weight: 600;
+               }
+               
+               h1 {
+                   font-weight: 400;
+                   line-height: 1.2;
+               }
+               
+               p {
+                   font-size: 1.125rem;
+               }
+               
+               h1,
+               p {
+                   margin-top: 0;
+                   margin-bottom: 0.5rem;
+               }
+               
+               label {
+                   display: flex;
+                   align-items: center;
+                   font-size: 1.125rem;
+                   margin-bottom: 0.5rem;
+                   color: var(--foreground);
+               }
+               
+               input,
+               button,
+               select,
+               textarea {
+                   margin: 0;
+                   font-family: inherit;
+                   font-size: inherit;
+                   line-height: inherit;
+               }
+               
+               .container {
+                   width: 100%;
+                   margin: 3.125rem auto 0 auto;
+                   padding: 1.8rem 1rem;
+               }
+               
+               .header {
+                   padding: 0 0.625rem;
+                   margin-bottom: 1.875rem;
+                   text-align: center;
+               }
+               
+               #description {
+                   font-style: comicsans;
+                   font-weight: 500;
+                   color: #fff;
+                   line-height: 1.2;
+               }
+               
+               #description2 {
+                   font-style: comicsans;
+                   font-weight: 400;
+                   color: #fff;
+               }
+               
+               .clue {
+                   margin-left: 0.25rem;
+                   font-size: 0.9rem;
+                   color: #e4e4e4;
+               }
+               
+               #quest {
+                   font-style: comicsans;
+                   color: rgb(241, 191, 98);
+                   font-size: 1.3rem;
+               }
+               
+               #quest2 {
+                   font-style: comicsans;
+                   color: rgb(212, 44, 44);
+                   font-size: 1.3rem;
+               }
+               
+               #quest3 {
+                   font-style: comicsans;
+                   color: rgb(241, 191, 98);
+                   font-size: 1.3rem;
+               }
+               
+               #quest4 {
+                   font-style: comicsans;
+                   color: rgb(212, 44, 44);
+                   font-size: 1.3rem;
+               }
+               
+               #quest5 {
+                   font-style: comicsans;
+                   color: rgb(241, 191, 98);
+                   font-size: 1.3rem;
+               }
+               
+               #quest6 {
+                   font-style: comicsans;
+                   color: rgb(212, 44, 44);
+                   font-size: 1.3rem;
+               }
+               
+               #quest7 {
+                   font-style: comicsans;
+                   color: rgb(241, 191, 98);
+                   font-size: 1.3rem;
+               }
+               
+               #quest8 {
+                   font-style: comicsans;
+                   color: rgb(212, 44, 44);
+                   font-size: 1.3rem;
+               }
+               
+               #quest9 {
+                   font-style: comicsans;
+                   color: rgb(241, 191, 98);
+                   font-size: 1.3rem;
+               }
+               
+               #quest10 {
+                   font-style: comicsans;
+                   color: rgb(212, 44, 44);
+                   font-size: 1.3rem;
+               }
+               
+               form {
+                   background: var(--background);
+                   border-radius: 0.25rem;
+                   border-color: #000;
+               }
+               
+               @media (min-width: 480px) {
+                   form {
+                       padding: 2.5rem;
+                   }
+               }
+               
+               .form-group {
+                   margin: 0 auto 1.25rem auto;
+                   padding: 0.25rem;
+               }
+               
+               .formControl {
+                   display: block;
+                   width: 100%;
+                   height: 2.375rem;
+                   padding: 0.375rem 0.75rem;
+                   color: var(--background);
+                   background-color: var(--foreground);
+                   background-clip: padding-box;
+                   border: 1px solid var(--background);
+                   border-radius: 0.25rem;
+                   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+               }
+               
+               .formControl:focus {
+                   border-color: rgb(255, 255, 255);
+                   outline: 0;
+                   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+               }
+               
+               .inputRadio,
+               .checkbox {
+                   display: inline-block;
+                   margin-right: 0.625rem;
+                   min-height: 1.25rem;
+                   min-width: 1.25rem;
+               }
+               
+               .btn {
+                   display: block;
+                   width: 100%;
+                   padding: 0.5rem 0.75rem;
+                   background: var(--color-green);
+                   color: inherit;
+                   border-radius: 15px;
+                   cursor: pointer;
+                   outline: none;
+                   text-transform: uppercase;
+                   font-size: 1.5rem;
+                   color: #fff;
+                   border: none;
+               }
+               
+               .btn:hover {
+                   background: rgb(54, 155, 168);
+                   color: rgb(0, 0, 0)
+               }
+               
+               @media (min-width:576px) {
+                   .container {
+                       max-width: 540px;
+                   }
+               }
+               
+               @media (min-width:800px) {
+                   .container {
+                       max-width: 760px;
+                   }
+               }
+               
+               footer {
+                   position: absolute;
+                   bottom: -80;
+                   left: 0;
+                   right: 0;
+                   background: #111;
+                   height: auto;
+                   width: 99vw;
+                   font-family: "Open Sans";
+                   padding-top: 40px;
+                   color: #fff;
+               }
+               
+               .footer-content {
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   flex-direction: column;
+                   text-align: center;
+               }
+               
+               .footer-content h3 {
+                   font-size: 1.8rem;
+                   font-weight: 400;
+                   text-transform: capitalize;
+                   line-height: 3rem;
+               }
+               
+               .footer-content p {
+                   max-width: 500px;
+                   margin: 10px auto;
+                   line-height: 28px;
+                   font-size: 14px;
+               }
+               
+               .socials {
+                   list-style: none;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   margin: 1rem 0 3rem 0;
+               }
+               
+               .socials li {
+                   margin: 0 10px;
+               }
+               
+               .socials a {
+                   text-decoration: none;
+                   color: #fff;
+               }
+               
+               .socials a i {
+                   font-size: 1.1rem;
+                   transition: color .4s ease;
+               }
+               
+               .socials a:hover i {
+                   color: aqua;
+               }
+               
+               .footer-bottom {
+                   background: #000;
+                   width: 99vw;
+                   padding: 20px 0;
+                   text-align: center;
+               }
+               
+               .footer-bottom p {
+                   font-size: 14px;
+                   word-spacing: 2px;
+                   text-transform: capitalize;
+               }
+               
+               .footer-bottom span {
+                   text-transform: uppercase;
+                   opacity: .4;
+                   font-weight: 200;
+               }
+               
+               * {
+                   margin: 0;
+                   padding: 0;
+                   box-sizing: border-box;
+                   font-family: 'Poppins', sans-serif;
+               }
+               
+               .wrapper {
+                   display: flex;
+               }
+               
+               .wrapper .static-txt {
+                   color: #fff;
+                   font-size: 25px;
+                   font-weight: 400;
+               }
+               
+               .wrapper .dynamic-txts {
+                   margin-left: 15px;
+                   height: 90px;
+                   line-height: 90px;
+                   overflow: hidden;
+               }
+               
+               .dynamic-txts li {
+                   list-style: none;
+                   color: #FC6D6D;
+                   font-size: 25px;
+                   font-weight: 500;
+                   position: relative;
+                   top: 0;
+                   animation: slide 12s steps(4) infinite;
+               }
+               
+               @keyframes slide {
+                   100% {
+                       top: -360px;
+                   }
+               }
+               
+               .dynamic-txts li span {
+                   position: relative;
+                   margin: 5px 0;
+                   line-height: 0px;
+               }
+               
+               .dynamic-txts li span::after {
+                   content: "";
+                   position: absolute;
+                   left: 0;
+                   height: 200%;
+                   width: 110%;
+                   background: #111;
+                   border-left: 2px solid #FC6D6D;
+                   animation: typing 3s steps(10) infinite;
+               }
+               
+               @keyframes typing {
+                   40%,
+                   60% {
+                       left: calc(100% + 30px);
+                   }
+                   100% {
+                       left: 0;
+                   }
+               }
+               
+               #particles-js {
+                   background-size: cover;
+                   height: 680px;
+               }
+               
+               .cursor {
+                   width: 40px;
+                   height: 40px;
+                   border: 2px solid white;
+                   border-radius: 50%;
+                   position: absolute;
+                   transition-duration: 100ms;
+                   transition-timing-function: ease-out;
+                   animation: cursorAnim .5s infinite alternate;
+                   pointer-events: none;
+               }
+               
+               .cursor::after {
+                   content: "HAI";
+                   width: 30px;
+                   height: 30px;
+                   position: absolute;
+                   border: 8px solid rgb(255, 0, 98);
+                   border-radius: 50%;
+                   opacity: .5;
+                   top: -4px;
+                   left: -4px;
+                   animation: cursorAnim2 .5s infinite alternate;
+               }
+               
+               @keyframes cursorAnim {
+                   from {
+                       transform: scale(1);
+                   }
+                   to {
+                       transform: scale(.7);
+                   }
+               }
+               
+               @keyframes cursorAnim2 {
+                   from {
+                       transform: scale(1);
+                   }
+                   to {
+                       transform: scale(.4);
+                   }
+               }
+               
+               @keyframes cursorAnim3 {
+                   0% {
+                       transform: scale(1);
+                   }
+                   50% {
+                       transform: scale(3);
+                   }
+                   100% {
+                       transform: scale(1);
+                       opacity: 0;
+                   }
+               }
+               
+               .expand {
+                   animation: cursorAnim3 .3s forwards;
+                   border: 1px solid red;
+               }
+               
+               *,
+               *::before,
+               *::after {
+                   box-sizing: border-box;
+               }
+               
+                :root {
+                   --clr-light: #000000;
+                   --clr-dark: #ffffff;
+                   --clr-grey: #f10000;
+                   --clr-suns: #fcfcfc;
+                   --clr-mode: #19ddff;
+                   --foreground: var(--clr-dark);
+                   --background: var(--clr-light);
+                   --grey: var(--clr-grey);
+                   --sun: var(--clr-suns);
+                   --mods: var(--clr-mode);
+                   --clr-primary: #aa00ff;
+                   --clr-gray: #263238;
+                   --font-size: 16px;
+                   --border-radius: 0.2em;
+                   --clr-base: #ffffff;
+               }
+               
+               .darkmode {
+                   --clr-light: #000000;
+                   --clr-dark: #ffffff;
+                   --clr-lights: #fff;
+                   --clr-sun: #dff800;
+                   --clr-mode: #baee00;
+                   --foreground: var(--clr-light);
+                   --background: var(--clr-dark);
+                   --grey: var(--clr-lights);
+                   --sun: var(--clr-sun);
+                   --clr-base: #263238;
+                   --clr-primary: #69f0ae;
+                   --clr-gray: #e0f7fa;
+               }
+               
+               .click-here {
+                   width: 100px;
+                   right: 1.5em;
+                   position: absolute;
+                   top: 3em;
+               }
+               
+               #icon {
+                   width: 17px;
+                   cursor: pointer;
+                   color: var(--sun);
+               }
+               
+               #wrapper-main {
+                   margin: 2em;
+               }
+               
+               .wrapper-color-switch {
+                   display: flex;
+                   justify-content: flex-end;
+                   align-items: center;
+                   margin-bottom: 1em;
+               }
+               
+               .color-switch {
+                   width: 4em;
+                   height: 2em;
+                   color: var(--grey);
+                   border-radius: 10em;
+                   background: var(--clr-base);
+                   border: 2px solid (--clr-primary);
+                   position: absolute;
+                   cursor: pointer;
+               }
+               
+               .color-switch-toggle {
+                   width: 1.6em;
+                   height: 1.6em;
+                   background: var(--clr-mode);
+                   position: absolute;
+                   border-radius: 10em;
+                   top: 0.2em;
+                   left: 0.2em;
+                   cursor: pointer;
+                   transition: all 250ms ease-in-out;
+               }
+               
+               .color-switch::before {
+                   content: "Dark Mode On";
+                   position: absolute;
+                   display: inline-block;
+                   width: 8em;
+                   left: -8em;
+                   top: 0.4em;
+               }
+               
+               #dark-mode-toggle:checked~label .color-switch-toggle {
+                   transform: translatex(2em);
+               }
+               
+               #dark-mode-toggle:checked~.color-switch::before {
+                   content: "Light Mode On";
+               }
+               
+               #dark-mode-toggle {
+                   display: none;
+               }
+               
+               .mouse {
+                   position: absolute;
+                   bottom: 4%;
+                   left: 50%;
+                   cursor: ns-resize;
+                   transform: translateX(-50%);
+               }
+               
+               .mouse-shape {
+                   position: relative;
+                   display: block;
+                   width: 35px;
+                   height: 65px;
+                   margin: 0 auto 15px;
+                   border: 3px solid #FFF;
+                   border-radius: 22px;
+               }
+               
+               .mouse .mouse-animation {
+                   position: absolute;
+                   display: block;
+                   top: 25%;
+                   left: 50%;
+                   width: 8px;
+                   height: 8px;
+                   background: #FFF;
+                   border-radius: 50%;
+                   transform: translate(-50%, -25%);
+                   -webkit-animation: ball-scroll 2s linear infinite;
+                   animation: ball-scroll 2s linear infinite;
+               }
+               
+               .mouse .mouse-msg {
+                   font-size: 0.8rem;
+               }

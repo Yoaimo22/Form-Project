@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Urbanist:wght@600&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+
+</head>
+
+<body>
+
+    <div class="cursor"> </div>
+    <div id="particles-js">
+        <!--Partticles js file!-->
+
+        <script type="text/javascript" src="cursor.js"></script>
+        <script type="text/javascript" src="particles.min.js"></script>
+
+        <script type="text/javascript" src="app.js"></script>
+
+        <div class="mouse">
+            <div class="mouse-shape">
+                <div class="mouse-animation"></div>
+            </div>
+            <div class="mouse-msg"> </div>
+        </div>
+        <div class="container1">
+
+            <div class="header">
+                <h1 id="title">
+                    Kesehatan Mata Siswa SMA Tarakanita 2 Kelas 11 IPS<br/> Tahun Ajaran 2021/2022 Pada Masa Pandemi
+                </h1>
+
+                <br/>
+                <p id="description2">
+                    Pilihlah salah satu jawaban pada pilihan jawaban dari pernyataan-pernyataan berikut yang sesuai dengan pendapat anda.<br/> Kriteria: <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;JR : Jarang &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SS : Sangat Sering
+                    <br/>&nbsp;&nbsp;&nbsp;S : Sering &nbsp;&nbsp;&nbsp;&nbsp;TP : Tidak Pernah
+
+                </p>
+
+                <main id="wrapper-main">
+
+                    <!--     light/dark mode container -->
+                    <div class="wrapper-color-switch">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <label for="dark-mode-toggle" class="color-switch">
+        <div class="color-switch-toggle"></div>
+      </label>
+                    </div>
+
+
+                    </header>
+            </div>
+
+        </div>
+
+        <form id="survey-form" action="connect.php" method="post">
+
+
+            <!-- Text section -->
+            <div class="form-group ">
+                <label for="name ">Name</label>
+                <input type="text " name="Name" id="name " class="formControl " placeholder="Enter your name " required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group ">
+                <label for="email ">Email</label>
+                <input type="email " name="Email" id="email " class="formControl " placeholder="Enter your Email " required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group ">
+                <label for="phone ">Class</label>
+                <input type="class " name="Class" id="class " class="formControl " placeholder="Enter your class " required>
+            </div>
+            <!-- end of Number section -->
+            <div class="form-group ">
+                <label for="gender ">Jenis Kelamin (Laki-laki/Perempuan)</label>
+                <input type="gender " name="Gender" id="gender " class="formControl " placeholder="Enter your Gender " required>
+            </div>
+
+            <!--  end of number section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">Apakah sudah pernah mengecek kesehatan mata sebelum dan sesudah PJJ? </p>
+                <select required id="dropdown" name="quest" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="S">S</option>
+                    <option value="SS">SS</option>
+                    <option  value="JR">JR</option>
+                    <option value="TP">TP</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest2">Berapa lama penggunaan barang digital saat PJJ? </p>
+                <select required id="dropdown" name="quest2" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="S">S</option>
+                    <option  value="SS">SS</option>
+                    <option  value="JR">JR</option>
+                    <option  value="TP">TP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest3">Apakah pernah memakai kacamata anti radiasi? </p>
+                <select required id="dropdown" name="quest3" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="S">S</option>
+                    <option  value="SS">SS</option>
+                    <option  value="JR">JR</option>
+                    <option  value="TP">TP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest4">Apakah kalian pernah mengonsumsi buah buahan seperti wortel, dll? </p>
+                <select required id="dropdown" name="quest4" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="S">S</option>
+                    <option  value="SS">SS</option>
+                    <option value="JR">JR</option>
+                    <option  value="TP">TP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest5">Apakah pernah menatap layar dengan jarak yang sangat dekat? seperti kurang dari 30 cm?</p>
+                <select required id="dropdown" name="quest5" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="S">S</option>
+                    <option value="SS">SS</option>
+                    <option  value="JR">JR</option>
+                    <option  value="TP">TP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest6">Apakah kalian sering berolahraga selama PJJ? </p>
+                <select required id="dropdown" name="quest6" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="S">S</option>
+                    <option  value="SS">SS</option>
+                    <option   value="JR">JR</option>
+                    <option  value="TP">TP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest7">Seberapa sering kalian mengistirahatkan mata? </p>
+                <select required id="dropdown" name="quest7" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="S">S</option>
+                    <option  value="SS">SS</option>
+                    <option value="JR">JR</option>
+                    <option  value="TP">TP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest8">Apakah kalian pernah mengalami pusing atau sakit kepala setelah bermain gadget? </p>
+                <select required id="dropdown" name="quest8" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="S">S</option>
+                    <option   value="SS">SS</option>
+                    <option value="JR">JR</option>
+                    <option  value="TP">TP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest9">Apakah mata pernah terasa gatal? </p>
+                <select required id="dropdown" name="quest9" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option   value="S">S</option>
+                    <option   value="SS">SS</option>
+                    <option   value="JR">JR</option>
+                    <option  value="TP">TP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest10">Apakah kalian pernah memperhatikan kecerahan lampu atau layar saat menggunakan gadget? </p>
+                <select required id="dropdown" name="quest10" class="formControl">
+                    <option value disabled selected >Select your answer</option>
+                    <option  value="S">S</option>
+                    <option value="SS">SS</option>
+                    <option value="JR">JR</option>
+                    <option value="TP">TP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+
+                <footer>
+                    <div class="footer-content ">
+                        <h3> Yoaimo22 </h3>
+                        <div class="body2 ">
+                            <div class="wrapper ">
+                                <div class="static-txt ">I'm a</div>
+                                <ul class="dynamic-txts ">
+
+                                    <li><span>Student</span></li>
+                                    <li><span>Web Developer</span></li>
+                                    <li><span>Content Creator</span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="socials ">
+                            <li>
+                                <a href="https://github.com/Yoaimo22 "> <i class="fa fa-github "> </i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/rocloen/ "> <i class="fa fa-instagram "> </i></a>
+                            </li>
+                            <li>
+                                <a href="# "> <i class="fa fa-Tik-tok "> </i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@pesmobile_exe "> <i class="fa fa-whatsapp "> </i></a>
+                            </li>
+                            <li>
+                                <a href="# "> <i class="fa fa-linkedin-square "> </i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom ">
+                        <p>copyright <i class="fa fa-copyright"></i> Bartolomeus H.A 11 IPS 1</p>
+                    </div>
+            </div>
+    </div>
+
+    </footer>
+
+
+    </div>
+    <script type="text/javascript" src="dark.js"></script>
+
+    </form>
+
+</body>
+
+</html>
